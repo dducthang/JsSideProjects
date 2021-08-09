@@ -107,7 +107,7 @@ a:active{
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
   max-width:95%;
   width: 500px;
-  animation: modalopen 2s;
+  animation: modalopen 1s;
   border-radius: var(--border-radius);
   font-family: Karla,sans-serif;
   font-weight: bold;
