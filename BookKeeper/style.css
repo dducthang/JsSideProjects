@@ -40,7 +40,7 @@ h1:hover{
 }
 
 .item{
-  padding: 20px;
+  padding: 10px;
   border-radius: var(--border-radius);
   background-color: rgba(0,0,0,0.5);
   margin: 10px;
@@ -84,5 +84,101 @@ a:hover,
 a:active{
   text-decoration: underline;
 }
+
+/* Modal */
+.modal-container{
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  position: fixed;
+}
+
+.show-modal{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.modal{
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  max-width:95%;
+  width: 500px;
+  animation: modalopen 2s;
+  border-radius: var(--border-radius);
+  font-family: Karla,sans-serif;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+}
+@keyframes modalopen{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.close-icon{
+  float:right;
+  font-size: 24px;
+  position: relative;
+  top:13px;
+  right: 13px;
+  color:white;
+  cursor:pointer;
+}
+
+.modal-header{
+  font-size: 20px;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+h3{
+  margin:0;
+}
+
+.modal-content{
+  padding:20px;
+  background-color: whitesmoke;
+  border-radius:  0 0 5px 5px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color:var(--primary-color);
+  font-weight: bold;
+}
+
+.form-group input{
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  outline:none;
+}
+
+button{
+  padding: 5px 30px;
+  font-family: Karla, sans-serif;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 17px;
+  margin-top: 10px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+
+
 
 
